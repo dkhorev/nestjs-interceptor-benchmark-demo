@@ -7,7 +7,7 @@ export class AppService {
   }
 
   async queueFake(): Promise<void> {
-    await this.delay(50);
+    await this.delay(5);
   }
 
   delay(time) {

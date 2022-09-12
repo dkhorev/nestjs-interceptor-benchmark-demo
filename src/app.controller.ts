@@ -1,5 +1,6 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, UseInterceptors } from '@nestjs/common';
 import { AppService } from './app.service';
+import { QueueHandlerInterceptor } from './queue-handler.interceptor';
 
 @Controller()
 export class AppController {
@@ -12,6 +13,7 @@ export class AppController {
     return this.appService.getHello();
   }
 
+  @UseInterceptors(QueueHandlerInterceptor)
   @Get('/after')
   after(): string {
     return this.appService.getHello();
