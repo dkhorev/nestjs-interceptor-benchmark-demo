@@ -5,4 +5,12 @@ export class AppService {
   getHello(): string {
     return 'Hello World!';
   }
+
+  async queueFake(): Promise<void> {
+    await this.delay(50);
+  }
+
+  delay(time) {
+    return new Promise((resolve) => setTimeout(resolve, time));
+  }
 }

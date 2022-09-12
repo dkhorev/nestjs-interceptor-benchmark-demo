@@ -5,8 +5,15 @@ import { AppService } from './app.service';
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
-  @Get()
-  getHello(): string {
+  @Get('/before')
+  async before(): Promise<string> {
+    await this.appService.queueFake();
+
+    return this.appService.getHello();
+  }
+
+  @Get('/after')
+  after(): string {
     return this.appService.getHello();
   }
 }
