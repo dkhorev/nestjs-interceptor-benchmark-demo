@@ -6,7 +6,7 @@ import { QueueHandlerInterceptor } from './queue-handler.interceptor';
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
-  @Get('/before')
+  @Get('/blocking')
   async before(): Promise<string> {
     await this.appService.queueFake();
 
@@ -14,7 +14,7 @@ export class AppController {
   }
 
   @UseInterceptors(QueueHandlerInterceptor)
-  @Get('/after')
+  @Get('/non-blocking')
   after(): string {
     return this.appService.getHello();
   }

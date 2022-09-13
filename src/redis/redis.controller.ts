@@ -6,7 +6,7 @@ import { RedisService } from './redis.service';
 export class RedisController {
   constructor(private readonly redisService: RedisService) {}
 
-  @Get('/before')
+  @Get('/blocking')
   async before(): Promise<string> {
     await this.redisService.queueFakeJob();
 
@@ -14,7 +14,7 @@ export class RedisController {
   }
 
   @UseInterceptors(RedisInterceptor)
-  @Get('/after')
+  @Get('/non-blocking')
   after(): string {
     return this.redisService.getHello();
   }
