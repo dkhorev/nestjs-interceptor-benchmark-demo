@@ -7,14 +7,14 @@
 
 ## 5ms delay on a job (synthetic)
 
-(before)
-Latency 7.41 ms
-Req/Sec  1247
-12k requests in 10.02s, 2.98 MB read
+(before) \
+Latency 7.41 ms \
+Req/Sec  1247 \
+12k requests in 10.02s, 2.98 MB read \\
 
-(after)
-Latency 1.48 ms
-Req/Sec 4997
+(after) \
+Latency 1.48 ms \
+Req/Sec 4997 \
 50k requests in 10.01s, 11.9 MB read
 
 
