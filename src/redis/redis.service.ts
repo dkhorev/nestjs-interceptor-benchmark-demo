@@ -11,6 +11,6 @@ export class RedisService {
   }
 
   async queueFakeJob(): Promise<void> {
-    await this.queue.add({ name: 'fake' });
+    await this.queue.add({});
   }
 }

@@ -6,8 +6,8 @@ export class AppService {
     return 'Hello World!';
   }
 
-  async queueFake(): Promise<void> {
-    await this.delay(5);
+  async queueFake(time: number): Promise<void> {
+    await this.delay(time);
   }
 
   delay(time) {
