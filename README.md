@@ -74,14 +74,20 @@ You need to set up Redis conenction first.
 
 #### Redis localhost
 
-first run redis with persistence \
-`docker run -p 6379:6379 --name redis -d redis --save 60 1 --loglevel warning`
+first run redis with persistence
+```bash
+docker run -p 6379:6379 --name redis -d redis --save 60 1 --loglevel warning
+```
 
-start service \
-`docker start redis`
+start service
+```bash
+docker start redis
+```
 
-copy env values \
-`cp .env.example .env`
+copy env values
+```bash
+cp .env.example .env
+```
 
 for default Redis container keep everything as is \
 for custom Redis connection replace the values in `.env`
