@@ -12,10 +12,8 @@ export class RedisInterceptor implements NestInterceptor {
   constructor(private readonly service: RedisService) {}
 
   intercept(context: ExecutionContext, next: CallHandler): Observable<any> {
-    return next.handle().pipe(
-      tap(async () => {
-        await this.service.queueFakeJob();
-      }),
-    );
+    return next
+      .handle()
+      .pipe(tap(async () => await this.service.queueFakeJob()));
   }
 }
