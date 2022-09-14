@@ -25,18 +25,22 @@ Your results may very depending on your machine.
 x10 - x100 Blocking
 ```bash
 autocannon -d 60 -c 10 http://127.0.0.1:3000/blocking-5ms
-
+```
+```bash
 autocannon -d 60 -c 50 http://127.0.0.1:3000/blocking-5ms
-
+```
+```bash
 autocannon -d 60 -c 100 http://127.0.0.1:3000/blocking-5ms
 ```
 
 x10 - x100 Non-blocking
 ```bash
 autocannon -d 60 -c 10 http://127.0.0.1:3000/non-blocking-5ms
-
+```
+```bash
 autocannon -d 60 -c 50 http://127.0.0.1:3000/non-blocking-5ms
-
+```
+```bash
 autocannon -d 60 -c 100 http://127.0.0.1:3000/non-blocking-5ms
 ```
 
@@ -45,18 +49,22 @@ autocannon -d 60 -c 100 http://127.0.0.1:3000/non-blocking-5ms
 x10 - x100 Blocking
 ```bash
 autocannon -d 60 -c 10 http://127.0.0.1:3000/blocking-25ms
-
+```
+```bash
 autocannon -d 60 -c 50 http://127.0.0.1:3000/blocking-25ms
-
+```
+```bash
 autocannon -d 60 -c 100 http://127.0.0.1:3000/blocking-25ms
 ```
 
 x10 - x100 Non-blocking
 ```bash
 autocannon -d 60 -c 10 http://127.0.0.1:3000/non-blocking-25ms
-
+```
+```bash
 autocannon -d 60 -c 50 http://127.0.0.1:3000/non-blocking-25ms
-
+```
+```bash
 autocannon -d 60 -c 100 http://127.0.0.1:3000/non-blocking-25ms
 ```
 
@@ -83,17 +91,21 @@ for custom Redis connection replace the values in `.env`
 x10 - x100 Blocking
 ```bash
 autocannon -d 60 -c 10 http://127.0.0.1:3000/redis/blocking
-
+```
+```bash
 autocannon -d 60 -c 50 http://127.0.0.1:3000/redis/blocking
-
+```
+```bash
 autocannon -d 60 -c 100 http://127.0.0.1:3000/redis/blocking
 ```
 
 x10 - x100 Non-blocking
 ```bash
 autocannon -d 60 -c 10 http://127.0.0.1:3000/redis/non-blocking
-
+```
+```bash
 autocannon -d 60 -c 50 http://127.0.0.1:3000/redis/non-blocking
-
+```
+```bash
 autocannon -d 60 -c 100 http://127.0.0.1:3000/redis/non-blocking
 ```
