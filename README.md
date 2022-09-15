@@ -2,7 +2,7 @@
 
 This sample project demonstrates the usage of interceptors for improving response times and thorouhput of NestJS apps.
 
-See the full article and benchmark results here: [https://medium.com/@dkhorev/590695692360](https://medium.com/@dkhorev/590695692360)
+See the full article and benchmark results here: [https://medium.com/@dkhorev/improve-response-time-10x-by-introducing-an-interceptor-in-nestjs-590695692360](https://medium.com/@dkhorev/improve-response-time-10x-by-introducing-an-interceptor-in-nestjs-590695692360)
 
 ## Start the app
 
